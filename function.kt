@@ -115,7 +115,7 @@ fun guatemalaCity(city: String, lowTemp: String, highTemp: String, rain: String)
 
 fun main() {
     ankara("Ankara", "27", "31", "82%")
-	tokyo("Tokyo", "32", "36", "10%")
+	  tokyo("Tokyo", "32", "36", "10%")
     capeTown("Cape Town", "59", "64", "2%")
     guatemalaCity("Guatemala City", "50", "55", "7%")
 
