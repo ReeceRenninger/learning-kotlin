@@ -74,3 +74,49 @@ fun main(){
     println("Did you spend more time on the phone today compared to yesterday? " +
             "${phoneTime(timeSpentToday3, timeSpentYesterday3)}") 
 }
+
+//! printing weather problem
+// ** cant return multiple items so created a data class(googled) that can be returned from the individual city functions
+data class WeatherInfo(val city: String, val lowTemp: String, val highTemp: String, val rain: String)
+
+// we put WeatherInfo as the item to be returned in the function signature and then return it as a variable
+fun ankara(city: String, lowTemp: String, highTemp: String, rain: String): WeatherInfo {
+    val weatherInfo = WeatherInfo(city, lowTemp, highTemp, rain)
+    println("City: ${weatherInfo.city}")
+    println("Low temperature: ${weatherInfo.lowTemp}, High temperature: ${weatherInfo.highTemp}")
+    println("Chance of rain: ${weatherInfo.rain}")
+    return weatherInfo
+}
+
+fun tokyo(city: String, lowTemp: String, highTemp: String, rain: String): WeatherInfo {
+    val weatherInfo = WeatherInfo(city, lowTemp, highTemp, rain)
+    println("City: ${weatherInfo.city}")
+    println("Low temperature: ${weatherInfo.lowTemp}, High temperature: ${weatherInfo.highTemp}")
+    println("Chance of rain: ${weatherInfo.rain}")
+    return weatherInfo
+}
+
+fun capeTown(city: String, lowTemp: String, highTemp: String, rain: String): WeatherInfo {
+    val weatherInfo = WeatherInfo(city, lowTemp, highTemp, rain)
+    println("City: ${weatherInfo.city}")
+    println("Low temperature: ${weatherInfo.lowTemp}, High temperature: ${weatherInfo.highTemp}")
+    println("Chance of rain: ${weatherInfo.rain}")
+    return weatherInfo
+}
+
+fun guatemalaCity(city: String, lowTemp: String, highTemp: String, rain: String): WeatherInfo {
+    val weatherInfo = WeatherInfo(city, lowTemp, highTemp, rain)
+    println("City: ${weatherInfo.city}")
+    println("Low temperature: ${weatherInfo.lowTemp}, High temperature: ${weatherInfo.highTemp}")
+    println("Chance of rain: ${weatherInfo.rain}")
+    return weatherInfo
+}
+
+
+fun main() {
+    ankara("Ankara", "27", "31", "82%")
+	tokyo("Tokyo", "32", "36", "10%")
+    capeTown("Cape Town", "59", "64", "2%")
+    guatemalaCity("Guatemala City", "50", "55", "7%")
+
+}
